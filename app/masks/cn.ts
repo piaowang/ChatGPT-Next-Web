@@ -9,7 +9,7 @@ export const CN_MASKS: BuiltinMask[] = [
         id: "writer-0",
         role: "user",
         content:
-          "请根据我提供的中文字段列表，帮我提供按以下格式生成一个列表，可以直接复制进excel使用。 但是请注意：要求col_ename这列将第二列的中文翻译成翻译英文的时候 ，通俗、常见的英文世界的的单词可以用缩写，\n比如xx数值、xx数量之类的英文单词要用qty结尾，xx金额要用money结尾，xx编码要用code结尾，xx名称要用name结尾，但是不能超过30个字符长度，全部都用大写。\nsort_num col_cname col_ename std_ename col_type col_desc is_pk is_null\n1 版本 VERSION_NUM - NVARCHAR(4) 1 0\n2 预算科目编码 BUDGET_ITEM_CODE - NVARCHAR(50) 1 0\n3 预算科目名称 BUDGET_ITEM_NAME - NVARCHAR(500) 1 0\n4 销售数量 SALES_QTY - DECIMAL(22,5) 0 1\n5 销售金额 SALES_MONEY DECIMAL(22,5) 0 1",
+          "请根据我提供的中文字段列表，帮我提供按以下格式生成一个列表，可以直接复制进excel使用。 但是请注意：要求col_ename这列将第二列的中文翻译成翻译英文的时候 ，通俗、常见的英文世界的的单词可以用缩写，\n比如xx数值、xx数量之类的英文单词要用qty结尾，xx金额要用money结尾，xx编码要用code结尾，xx名称要用name结尾，但是不能超过30个字符长度，全部都用大写。下面说提供给你参考的格式：\nsort_num col_cname col_ename std_ename col_type col_desc is_pk is_null\n1 版本 VERSION_NUM - NVARCHAR(4) 1 0\n2 预算科目编码 BUDGET_ITEM_CODE - NVARCHAR(50) 1 0\n3 预算科目名称 BUDGET_ITEM_NAME - NVARCHAR(500) 1 0\n4 销售数量 SALES_QTY - DECIMAL(22,5) 0 1\n5 销售金额 SALES_MONEY DECIMAL(22,5) 0 1",
         date: "",
       },
     ],
