@@ -9,7 +9,7 @@ export const CN_MASKS: BuiltinMask[] = [
         id: "writer-0",
         role: "user",
         content:
-          "根据你的要求，我将为你提供一个列表。你可以直接复制这个列表并将其粘贴到Excel中。这个列表的格式如下：\n\n| sort_num | col_cname | col_ename | std_ename | col_type | col_desc | is_pk | is_null |\n|----------|-----------|-----------|-----------|----------|----------|-------|---------|\n| 1 | 版本 | VERSION | - | NVARCHAR(4) | - | 1 | 0 |\n| 2 | 预算科目编码 | BUDGET_ITEM_CODE | - | NVARCHAR(50) | - | 1 | 0 |\n| 3 | 预算科目名称 | BUDGET_ITEM_NAME | - | NVARCHAR(500) | - | 1 | 0 |\n| 4 | 销售数量 | SALES_QTY | - | DECIMAL(22,5) | - | 0 | 1 |\n| 5 | 销售金额 | SALES_MONEY | - | DECIMAL(22,5) | - | 0 | 1 |\n\n这个列表中的每一行都代表一个字段。每个字段都有一个中文名称（col_cname），一个英文名称（col_ename），一个标准英文名称（std_ename），一个类型（col_type），一个描述（col_desc），以及两个标记（is_pk和is_null）。\n\n请注意，我已经尽力将中文名称翻",
+          "请根据我提供的中文字段列表，帮我提供按以下格式生成一个列表，可以直接复制进excel使用。 但是请注意：要求col_ename这列将第二列的中文翻译成翻译英文的时候 ，通俗、常见的英文世界的的单词可以用缩写，\n比如xx数值、xx数量之类的英文单词要用qty结尾，xx金额要用money结尾，xx编码要用code结尾，xx名称要用name结尾，但是不能超过30个字符长度，全部都用大写。\nsort_num col_cname col_ename std_ename col_type col_desc is_pk is_null\n1 版本 VERSION_NUM - NVARCHAR(4) 1 0\n2 预算科目编码 BUDGET_ITEM_CODE - NVARCHAR(50) 1 0\n3 预算科目名称 BUDGET_ITEM_NAME - NVARCHAR(500) 1 0\n4 销售数量 SALES_QTY - DECIMAL(22,5) 0 1\n5 销售金额 SALES_MONEY DECIMAL(22,5) 0 1",
         date: "",
       },
     ],
